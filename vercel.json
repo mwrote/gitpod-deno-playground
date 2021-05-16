@@ -1,14 +1,14 @@
 {
-	"public": true,
-	"functions": {
-	  "api/**/*.[jt]s": {
-		"runtime": "vercel-dev-runtime@0.7.11",
-		"includeFiles": "api/**/*.json"
-	  }
-	},
-	"build": {
-	  "env": {
-		"DENO_TSCONFIG": "api/tsconfig.json"
-	  }
-	}
+  "public": true,
+  "functions": {
+    "api/**/*.[jt]s": {
+      "runtime": "vercel-deno@0.7.11",
+      "includeFiles": "api/**/*.json"
+    }
+  },
+  "build": {
+    "env": {
+      "DENO_TSCONFIG": "api/tsconfig.json"
+    }
   }
+}
